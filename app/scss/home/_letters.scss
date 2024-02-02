@@ -1,0 +1,49 @@
+.letters {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    max-width: 1070px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    @include flex-column(16);
+    text-align: center;
+  }
+
+  &__name {
+    font-size: 28px;
+    line-height: 1.05;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &::before {
+      @include bg;
+      display: flex;
+      margin: 0 auto;
+      content: "";
+      width: 32px;
+      height: 32px;
+      background-image: url("../images/icons/pdf.svg");
+    }
+  }
+
+  &__link {
+    color: $purple;
+    transition: opacity .4s, border .4s;
+    border-bottom: 1px solid transparent;
+    align-self: center;
+
+    &:hover {
+      border-bottom-color: $purple;
+    }
+
+    &:focus {
+      opacity: .5;
+    }
+  }
+}

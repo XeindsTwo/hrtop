@@ -1,0 +1,21 @@
+.arrow {
+  @include flex-center;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: $white;
+  transition: background-color .4s, opacity .4s;
+  box-shadow: 0 0 20px 0 rgba($black, 0.08);
+
+  &:hover {
+    background-color: $black;
+
+    svg path {
+      stroke: $white;
+    }
+  }
+
+  &--prev {
+    transform: scale(-1);
+  }
+}

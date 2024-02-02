@@ -1,0 +1,42 @@
+.consultation {
+  position: relative;
+
+  &__content {
+    max-width: 450px;
+  }
+
+  &__title {
+    text-align: left;
+    margin: 0 0 16px;
+  }
+
+  &__text {
+    max-width: 430px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: rgba($black, .64);
+  }
+
+  &__list {
+    margin-bottom: 40px;
+    @include flex-column(16);
+  }
+
+  &__subtitle {
+    max-width: 411px;
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__img {
+    position: absolute;
+    @include top50;
+    right: -18%;
+  }
+
+  label {
+    display: inline-block;
+    max-width: max-content;
+  }
+}

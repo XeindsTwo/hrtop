@@ -1,0 +1,136 @@
+.body {
+  font-family: $inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  letter-spacing: -0.32px;
+  color: $black;
+  background-color: $gray5;
+  position: relative;
+  overflow-x: hidden;
+  will-change: scroll-position;
+
+  &::before {
+    @include pseudo;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, .8);
+    backdrop-filter: blur(6px);
+    transition: opacity .6s;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &--active {
+    overflow: hidden;
+
+    &::before {
+      z-index: 45;
+      opacity: 1;
+    }
+  }
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 60px;
+  margin: 0 auto;
+  width: 100%;
+  @include r($desktop) {
+    padding: 0 30px;
+  }
+  @include r($sm) {
+    padding: 0 25px;
+  }
+  @include r($phone) {
+    padding: 0 15px;
+  }
+}
+
+.logo {
+  transition: opacity .3s, outline .3s;
+  border-radius: 3px;
+
+  &:hover {
+    opacity: .5;
+  }
+
+  &:focus {
+    outline: 2px solid $purple;
+  }
+
+  &__img {
+    @include objectCoverBg;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.indent {
+  margin-top: 112px;
+  @include r($desktop) {
+    margin-top: 100px;
+  }
+  @include r($tablet) {
+    margin-top: 85px;
+  }
+  @include r($phone) {
+    margin-top: 80px;
+  }
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 700;
+  font-family: $harmonia;
+  letter-spacing: -0.03em;
+  line-height: .99;
+  text-align: center;
+  max-width: 815px;
+  margin: 0 auto 44px;
+
+  span {
+    padding: 8px 14px 10px 14px;
+    border: 2px solid rgba($black, .13);
+    border-radius: 40px;
+    font-style: italic;
+    font-size: 24px;
+    display: inline-block;
+    transform: translateY(-5px);
+  }
+
+  &--white {
+    color: $gray5;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba($purple, .3);
+}
+
+::-webkit-scrollbar-thumb,
+::selection {
+  background-color: $purple;
+}
+
+::selection {
+  color: white;
+}

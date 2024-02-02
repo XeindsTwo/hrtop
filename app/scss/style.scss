@@ -1,0 +1,23 @@
+@import 'reset';
+@import 'fonts';
+@import 'vars';
+@import 'libs';
+@import 'mixin';
+@import 'global';
+
+@import "home/home";
+@import "home/consultation";
+@import "home/advantages";
+@import "home/letters";
+@import "home/benefits";
+@import "home/security";
+@import "home/manager-vacancies";
+@import "home/personal";
+@import "home/clients";
+
+@import "components/footer";
+@import "components/menu-btn";
+@import "components/btn";
+@import "components/form-elements";
+@import "components/arrow";
+@import "components/subtext";

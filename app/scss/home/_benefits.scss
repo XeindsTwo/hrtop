@@ -1,0 +1,119 @@
+.benefits {
+  &__title {
+    text-align: left;
+    max-width: 495px;
+    margin: 0 0 40px;
+  }
+
+  &__items, &__row {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__items {
+    flex-direction: column;
+  }
+
+  &__item {
+    padding: 32px 0 32px 32px;
+    position: relative;
+    border-radius: 32px;
+    background-color: $gray10;
+    min-height: 413px;
+    max-width: 544px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border: 2px solid $gray10;
+    overflow: hidden;
+
+    &--long {
+      max-width: 753px;
+      flex-direction: column;
+    }
+
+    &--one {
+      flex-direction: row;
+      gap: 21px;
+      align-items: flex-end;
+    }
+
+    &--two {
+      flex-direction: row;
+      gap: 21px;
+      align-items: center;
+    }
+
+    &--four {
+      flex-direction: row;
+      gap: 21px;
+      align-items: flex-end;
+    }
+  }
+
+  &__icon {
+    @include objectCoverBg;
+    margin-bottom: 32px;
+  }
+
+  &__info {
+    &--bottom {
+      margin-top: auto;
+    }
+  }
+
+  &__name {
+    font-size: 28px;
+    line-height: 1.06;
+    font-weight: 600;
+    font-family: $harmoniaSemiBold;
+    margin-bottom: 8px;
+
+    &--overshort {
+      max-width: 330px;
+    }
+
+    &--short {
+      max-width: 370px;
+    }
+  }
+
+  &__text {
+    color: rgba($black, .64);
+    max-width: 305px;
+    letter-spacing: 0;
+
+    &--short {
+      max-width: 241px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__img {
+    @include objectCoverBg;
+
+    &--guarantee {
+      margin-bottom: -32px;
+      margin-right: -34px;
+    }
+
+    &--unique {
+      margin-bottom: -32px;
+      margin-right: 5px;
+    }
+
+    &--selection {
+      margin: -61px 0 0;
+    }
+  }
+
+  .btn {
+    margin-top: auto;
+  }
+}

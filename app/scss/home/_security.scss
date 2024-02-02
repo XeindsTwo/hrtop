@@ -1,0 +1,24 @@
+.security {
+  &__title {
+    margin-bottom: 28px;
+    max-width: 680px;
+  }
+
+  &__list {
+    max-width: 980px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  &__item {
+    padding: 8px 16px;
+    font-weight: 500;
+    border-radius: 16px;
+    background-color: rgba(#5A5171, .08);
+    letter-spacing: 0;
+    line-height: 1.45;
+  }
+}
