@@ -1,0 +1,131 @@
+.home {
+  &__inner {
+    position: relative;
+    min-height: 830px;
+    background-color: $purple;
+    border-radius: $border40;
+    padding: 48px;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+
+  &__scale,
+  &__description,
+  &__text {
+    letter-spacing: 0;
+  }
+
+  &__scale {
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: $border16;
+    background-color: $purple5;
+    display: inline-block;
+    margin-bottom: 40px;
+    align-self: flex-start;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    font-size: 74px;
+    font-weight: 800;
+    max-width: 855px;
+    line-height: .99;
+    font-family: $harmonia;
+
+    span {
+      margin: 5px 0 6px -3px;
+      font-style: italic;
+      display: inline-block;
+      position: relative;
+
+      &::before {
+        @include pseudo;
+        border: 2px solid $white;
+        border-radius: 64px;
+        width: 107%;
+        height: 100%;
+        top: 12%;
+        left: -13px;
+      }
+    }
+  }
+
+  &__description,
+  &__text {
+    line-height: 1.45;
+  }
+
+  &__description {
+    max-width: 540px;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  &__aside {
+    margin-top: auto;
+    max-width: 550px;
+    @include flex-column(24);
+  }
+
+  &__text {
+    color: rgba($white, .55);
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__decor {
+    @include bg;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__people {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+
+    &-img {
+      @include objectCoverBg;
+    }
+
+    &-job {
+      position: absolute;
+      top: 17%;
+      left: -7%;
+    }
+  }
+
+  &__info {
+    @include flex-column();
+    letter-spacing: 0;
+    line-height: 1.45;
+    bottom: 48px;
+    left: -6px;
+    position: absolute;
+  }
+
+  &__name {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  &__job {
+    color: rgba($white, .63);
+    font-weight: 500;
+    font-size: 24px;
+  }
+}

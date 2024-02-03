@@ -1,14 +1,31 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
 
+Fancybox.bind("[data-fancybox]", {});
+
 const swiperCases = new Swiper(".cases__swiper", {
   slidesPerView: 'auto',
   spaceBetween: 24,
-  centeredSlides: true,
   initialSlide: 1,
+  centeredSlides: true,
   loop: true,
   keyboard: {
     enabled: true,
   }
+});
+
+const swiperReviews = new Swiper(".reviews__swiper", {
+  slidesPerView: 'auto',
+  spaceBetween: 24,
+  initialSlide: 1,
+  centeredSlides: true,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+  navigation: {
+    prevEl: ".reviews--prev",
+    nextEl: ".reviews--next"
+  },
 });
 
 const swiperSpecialists = new Swiper(".specialists__swiper", {

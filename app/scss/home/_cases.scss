@@ -7,8 +7,8 @@
     background-color: $gray10;
     padding: $padding32;
     display: flex;
-    gap: 32px;
-    min-height: 572px;
+    gap: 24px;
+    min-height: 508px;
   }
 
   &__content {
@@ -21,6 +21,7 @@
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 28px;
+    margin-right: -6px;
 
     &-item {
       padding: 8px 16px;
@@ -53,10 +54,17 @@
   &__text {
     color: rgba($black, .64);
     letter-spacing: 0;
+    @include flex-column(8);
   }
 
   &__img {
     border-radius: $border20;
+
+    &--absolute {
+      position: absolute;
+      right: 21.5px;
+      top: 102px;
+    }
   }
 
   .swiper-slide {
@@ -66,7 +74,7 @@
     cursor: grab;
 
     &--long {
-      width: 770px;
+      width: 755px;
     }
   }
 }

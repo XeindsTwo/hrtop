@@ -13,6 +13,7 @@
   }
 
   &__name {
+    font-family: $harmoniaSemiBold;
     font-size: 28px;
     line-height: 1.05;
     font-weight: 600;
@@ -35,7 +36,7 @@
   &__link {
     color: $purple;
     transition: opacity .4s, border .4s;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     align-self: center;
 
     &:hover {

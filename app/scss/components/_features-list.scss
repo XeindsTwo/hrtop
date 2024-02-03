@@ -23,5 +23,9 @@
     font-weight: 600;
     margin-top: auto;
     font-family: $harmoniaSemiBold;
+
+    &--short {
+      max-width: 320px;
+    }
   }
 }
