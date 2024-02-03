@@ -1,6 +1,6 @@
 .manager-vacancies {
   &__inner {
-    border-radius: 40px;
+    border-radius: $border40;
     background-color: $purple;
     padding: 48px;
     display: flex;
@@ -37,5 +37,12 @@
   &__img {
     @include objectCoverBg;
     border-radius: 50%;
+  }
+
+  &__btn {
+    &:hover {
+      color: $white;
+      border-color: $white;
+    }
   }
 }

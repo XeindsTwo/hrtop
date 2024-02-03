@@ -1,7 +1,7 @@
 .advantages {
   background-color: $purple;
-  border-radius: 40px;
-  padding: 80px 0;
+  border-radius: $border40;
+  padding: $padding80;
 
   &__title,
   &__list {
@@ -10,34 +10,6 @@
 
   &__title {
     max-width: 690px;
-  }
-
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 24px;
-  }
-
-  &__item {
-    padding: 32px;
-    border-radius: 32px;
-    background-color: $gray5;
-    border: 2px solid $gray10;
-    display: flex;
-    flex-direction: column;
-    gap: 54px;
-
-    img {
-      @include objectCoverBg;
-    }
-  }
-
-  &__name {
-    font-size: 28px;
-    line-height: 1.05;
-    font-weight: 600;
-    margin-top: auto;
-    font-family: $harmoniaSemiBold;
   }
 
   &__links {
@@ -53,7 +25,7 @@
     align-items: center;
     gap: 8px;
     color: $white;
-    border-radius: 16px;
+    border-radius: $border16;
     font-weight: 500;
     padding: 16px 32px;
     background-color: $black;

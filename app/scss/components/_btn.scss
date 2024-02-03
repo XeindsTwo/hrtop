@@ -4,11 +4,12 @@
   align-items: center;
   gap: 8px;
   color: $white;
-  border-radius: 16px;
+  border-radius: $border16;
   font-weight: 500;
   padding: 15.2px 32px;
   background-color: $black;
   border: 1px solid transparent;
+  letter-spacing: 0;
   transition: background-color .4s, border .4s, color .4s, opacity .4s;
 
   &:hover {
@@ -26,6 +27,11 @@
     font-weight: 400;
     background-color: $white;
     color: $black;
+
+    &-border {
+      background-color: transparent;
+      border-color: $gray20;
+    }
 
     &:hover {
       background-color: $purple;

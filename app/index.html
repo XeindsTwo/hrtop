@@ -26,7 +26,7 @@
 
   </div>
 </section>
-  <section class="consultation indent">
+  <section class="consultation indent" id="consultation">
   <div class="container">
     <div class="consultation__content">
       <h2 class="consultation__title title">Заявка на консультацию</h2>
@@ -58,18 +58,18 @@
     <h2 class="advantages__title title title--white">
       Почему Вы можете доверять именно нам?
     </h2>
-    <ul class="advantages__list">
-      <li class="advantages__item">
+    <ul class="advantages__list features-list">
+      <li class="features-list__item">
         <img src="images/icons/stars.svg" alt="декоративная иконка" width="24" height="24">
-        <h3 class="advantages__name">Более 5 лет на рынке</h3>
+        <h3 class="features-list__name">Более 5 лет на рынке</h3>
       </li>
-      <li class="advantages__item">
+      <li class="features-list__item">
         <img src="images/icons/stream_user.svg" alt="декоративная иконка" width="24" height="24">
-        <h3 class="advantages__name">7000+ закрытых вакансий</h3>
+        <h3 class="features-list__name">7000+ закрытых вакансий</h3>
       </li>
-      <li class="advantages__item">
+      <li class="features-list__item">
         <img src="images/icons/work_portfel.svg" alt="декоративная иконка" width="24" height="24">
-        <h3 class="advantages__name">Много хороших отзывов о подборе персонала</h3>
+        <h3 class="features-list__name">Много хороших отзывов о подборе персонала</h3>
       </li>
     </ul>
     <div class="advantages__links">
@@ -86,6 +86,94 @@
         Написать в WhatsApp
       </a>
     </div>
+  </div>
+</section>
+
+  <section class="cases indent">
+  <h2 class="cases__title title">Успешные кейсы</h2>
+  <div class="cases__swiper swiper">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+        <div class="cases__item">
+          <div class="cases__content">
+            <div class="cases__exodus">
+              <span class="cases__exodus-item">Приумножили прибыль</span>
+              <span class="cases__exodus-item">Справились быстро</span>
+            </div>
+            <img class="cases__logo" src="images/logos/1.png" width="189.6" height="30" alt="Land Rover Range Rover">
+            <h3 class="cases__name cases__name--short">
+              Проведена оценка всего персонала
+            </h3>
+            <p class="cases__text">
+              Проведена оценка всего персонала методом enps, выявлены точки роста компании.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="swiper-slide swiper-slide--long">
+        <div class="cases__item">
+          <img class="cases__img" src="images/cases/1.jpg" width="324" height="508" alt="кейс beFruitbe">
+          <div class="cases__content">
+            <div class="cases__exodus">
+              <span class="cases__exodus-item">7 новых сотрудников за 2,5 недели</span>
+              <span class="cases__exodus-item">Без замен</span>
+            </div>
+            <img class="cases__logo" src="images/logos/8.png" width="78.65" height="30" alt="beFruitbe">
+            <h3 class="cases__name">
+              Найм нового отдела продаж в краткие сроки
+            </h3>
+            <p class="cases__text">
+              7 новых сотрудников за 2,5 недели, готовых трудиться на
+              благо компании. Не потребовалось ни одной замены,
+              сотрудники работают по сей день в компании
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <div class="cases__item">
+          <div class="cases__content">
+            <div class="cases__exodus">
+              <span class="cases__exodus-item">Приумножили прибыль</span>
+              <span class="cases__exodus-item">Справились быстро</span>
+            </div>
+            <img class="cases__logo" src="images/logos/10.png" width="211" height="24" alt="Century 21">
+            <h3 class="cases__name cases__name--short">
+              Cтарт-ап проекта по недвижимости.
+            </h3>
+            <p class="cases__text">
+              Результаты за 2 месяца: <br>
+              Нанят Операционный директор, 2 руководителя отдела продаж, офис менеджер и 18 менеджеров по продажам.
+              <br>
+              82% нанятого персонала работают в компании по сей день
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <div class="cases__item">
+          <div class="cases__content">
+            <div class="cases__exodus">
+              <span class="cases__exodus-item">Приумножили прибыль</span>
+              <span class="cases__exodus-item">Справились быстро</span>
+            </div>
+            <img class="cases__logo" src="images/logos/11.png" width="80" height="78" alt="логотип">
+            <h3 class="cases__name cases__name--short">
+              Найм эффективного руководителя отдела продаж
+            </h3>
+            <p class="cases__text">
+              Нанят сотрудник, который приумножил прибыль компании в 3 раза на
+              3 месяц работы, после года работы прибыль - х10! <br> <br>
+              Сотрудник взял под ответственность 3 отдела: логистики, маркетинга и продаж и вырос в коммерческого
+              директора.
+              Работает в компании уже третий год, собственник разгружен на 90%, ведь найден Топ, который «рулит»
+              бизнесом
+              эффективно.
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -126,7 +214,7 @@
                 Гарантия бесплатной замены сотрудников до 1 года
               </p>
             </div>
-            <button class="btn btn--white" type="button">Консультация</button>
+            <a class="btn btn--white" href="#consultation">Консультация</a>
           </div>
           <img class="benefits__img benefits__img--guarantee" width="259" height="379" src="images/guarantee.png" alt="декор">
         </div>
@@ -139,7 +227,7 @@
                 Высокая скорость подбора благодаря использованию Искусственного Интеллекта.
               </h3>
               <p class="benefits__text">
-                Если вам нужно срочно закрыть вакансию в кратчайшие сроки, мы сможем вам помочь!
+                Если Вам нужно срочно закрыть вакансию в кратчайшие сроки, мы сможем вам помочь!
               </p>
             </div>
           </div>
@@ -171,7 +259,7 @@
               Самые лучшие кадры после нескольких этапов отбора.
             </h3>
             <p class="benefits__text benefits__text--short">
-              К вам попадают только настоящие «бриллианты, топы рынка
+              К Вам попадают только настоящие «бриллианты, топы рынка
             </p>
           </div>
         </div>
@@ -216,6 +304,56 @@
   </div>
 </section>
 
+  <section class="specialists indent">
+  <div class="container">
+    <h2 class="specialists__title title">
+      Наши специалисты по подбору
+    </h2>
+  </div>
+  <div class="specialists__swiper swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="specialists__img" src="images/specialists/1.jpg" width="928" height="617" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img class="specialists__img" src="images/specialists/2.jpg" width="928" height="617" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img class="specialists__img" src="images/specialists/3.jpg" width="928" height="617" alt="">
+      </div>
+    </div>
+    <div class="specialists__control container">
+      <button class="arrow arrow--prev specialists--prev">
+        <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 0.75L8.5 8.25L1 15.75" stroke="#131300" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="arrow specialists--next">
+        <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 0.75L8.5 8.25L1 15.75" stroke="#131300" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="container">
+    <ul class="features-list">
+      <li class="features-list__item">
+        <img src="images/icons/stars.svg" alt="декоративная иконка" width="24" height="24">
+        <h3 class="features-list__name">5 лет опыта найма</h3>
+      </li>
+      <li class="features-list__item">
+        <img src="images/icons/stream_user.svg" alt="декоративная иконка" width="24" height="24">
+        <h3 class="features-list__name">7000+ закрытых вакансий</h3>
+      </li>
+      <li class="features-list__item">
+        <img src="images/icons/work_portfel.svg" alt="декоративная иконка" width="24" height="24">
+        <h3 class="features-list__name">96% работают более года</h3>
+      </li>
+    </ul>
+  </div>
+</section>
   <section class="manager-vacancies indent">
   <div class="container">
     <div class="manager-vacancies__inner">
@@ -229,12 +367,33 @@
         <span class="manager-vacancies__subtext">
           Гарантия замены до 365 дней Подбор персонала от 50.000 за сотрудника
         </span>
-        <button class="btn" type="button">Нужен сотрудник</button>
+        <a class="manager-vacancies__btn btn" href="#consultation">Нужен сотрудник</a>
       </div>
       <img class="manager-vacancies__img" src="images/manager-vacancies.jpg" alt="" width="440" height="440">
     </div>
   </div>
 </section>
+  <section class="base indent">
+  <div class="container">
+    <h2 class="title">
+      Большое количество работников <span>более 100тыс.</span> в базе
+    </h2>
+  </div>
+  <img class="base__img" src="images/card-two.png" width="1728" height="534" alt="декор">
+  <div class="container">
+    <div class="info">
+      <p class="info__title">
+        Найти своего специалиста, с гарантией замены
+      </p>
+      <a class="info__btn btn" href="#consultation">Найти сотрудника</a>
+      <p class="info__text">
+        Гарантия замены до 365 дней <br>
+        Подбор персонала от 50.000 за сотрудника
+      </p>
+    </div>
+  </div>
+</section>
+
   <section class="personal indent">
   <div class="container">
     <h2 class="personal__title title">
@@ -298,12 +457,12 @@
         </svg>
       </button>
     </div>
-    <div class="personal__info">
-      <p class="subtext">
+    <div class="info">
+      <p class="info__title">
         Как происходит сотрудничество, от подписания договора до оффера
       </p>
-      <a class="btn" href="" target="_blank">Смотреть</a>
-      <span class="personal__file">PDF-Файл</span>
+      <a class="info__btn btn" href="" target="_blank">Смотреть</a>
+      <span class="info__text">PDF-Файл</span>
     </div>
   </div>
 </section>
@@ -326,18 +485,54 @@
     <img class="clients__logo" src="images/logos/9.png" width="137" height="30.25" alt="логотип">
   </div>
   <div class="container">
-    <div class="clients__info">
-      <p class="subtext">
+    <div class="info">
+      <p class="info__title">
         Найти своего специалиста, <br> с гарантией замены до 365 дней
       </p>
-      <button class="btn" type="button">Оставить заявку</button>
+      <a class="info__btn btn" href="#consultation">Оставить заявку</a>
     </div>
   </div>
 </section>
 </main>
-<footer class="footer" id="footer">
+<footer class="footer indent" id="footer">
   <div class="container">
-
+    <div class="footer__inner">
+      <img class="logo__img" src="images/icons/logo.svg" alt="логотип">
+      <nav>
+        <ul class="footer__list">
+          <li>
+            <a class="footer__link" href="">Блок</a>
+          </li>
+          <li>
+            <a class="footer__link" href="">Преимущества</a>
+          </li>
+          <li>
+            <a class="footer__link" href="">Доверие</a>
+          </li>
+          <li>
+            <a class="footer__link" href="">Кейсы</a>
+          </li>
+          <li>
+            <a class="footer__link" href="">Обратная связь</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__socials">
+        <a class="footer__social" href="tel:+79613113131">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.95 21.75C17.8667 21.75 15.8083 21.2957 13.775 20.387C11.7417 19.4783 9.89167 18.191 8.225 16.525C6.55833 14.8583 5.271 13.0083 4.363 10.975C3.455 8.94167 3.00067 6.88333 3 4.8C3 4.5 3.1 4.25 3.3 4.05C3.5 3.85 3.75 3.75 4.05 3.75H8.1C8.33333 3.75 8.54167 3.82933 8.725 3.988C8.90833 4.14667 9.01667 4.334 9.05 4.55L9.7 8.05C9.73333 8.31667 9.725 8.54167 9.675 8.725C9.625 8.90833 9.53333 9.06667 9.4 9.2L6.975 11.65C7.30833 12.2667 7.704 12.8623 8.162 13.437C8.62 14.0117 9.12433 14.566 9.675 15.1C10.1917 15.6167 10.7333 16.096 11.3 16.538C11.8667 16.98 12.4667 17.384 13.1 17.75L15.45 15.4C15.6 15.25 15.796 15.1373 16.038 15.062C16.28 14.9867 16.5173 14.966 16.75 15L20.2 15.7C20.4333 15.7667 20.625 15.8877 20.775 16.063C20.925 16.2383 21 16.434 21 16.65V20.7C21 21 20.9 21.25 20.7 21.45C20.5 21.65 20.25 21.75 19.95 21.75Z" fill="#9B6FEA"/>
+          </svg>
+          +7 (961) 311-31-31
+        </a>
+        <a class="footer__social" href="mailto:tophr13@yandex.ru">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4.75H4C2.9 4.75 2.01 5.65 2.01 6.75L2 18.75C2 19.85 2.9 20.75 4 20.75H20C21.1 20.75 22 19.85 22 18.75V6.75C22 5.65 21.1 4.75 20 4.75ZM20 8.75L12 13.75L4 8.75V6.75L12 11.75L20 6.75V8.75Z" fill="#9B6FEA"/>
+          </svg>
+          tophr13@yandex.ru
+        </a>
+        <a class="btn btn--white btn--white-border" href="#consultation">Консультация</a>
+      </div>
+    </div>
   </div>
 </footer>
 <script src="js/main.min.js" type="module" defer></script>

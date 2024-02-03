@@ -1,0 +1,36 @@
+.info {
+  max-width: 450px;
+  text-align: center;
+  margin: 0 auto;
+
+  &--short {
+    max-width: 410px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: 0;
+  }
+
+  &__btn {
+    margin: 24px auto 0;
+  }
+
+  &__text {
+    margin-top: 16px;
+    letter-spacing: 0;
+    color: rgba(3,3,3,.64);
+    line-height: 1.5;
+    display: inline-block;
+  }
+}
+
+.subtext {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.45;
+  margin-bottom: 24px;
+  letter-spacing: 0;
+}

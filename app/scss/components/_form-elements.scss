@@ -1,7 +1,7 @@
 .input {
   line-height: 1.5;
   padding: 12px 16px;
-  border-radius: 12px;
+  border-radius: $border12;
   border: 1px solid $purple90;
   background-color: $gray10;
   transition: border .4s, background-color .4s;

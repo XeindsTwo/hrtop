@@ -1,3 +1,54 @@
 .footer {
+  margin-bottom: 24px;
 
+  &__inner {
+    @include flex-between(48);
+    align-items: center;
+  }
+
+  &__list {
+    @include flex-align-center(24);
+  }
+
+  &__link {
+    transition: color .4s, border .4s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+
+    &:hover {
+      color: $purple;
+    }
+
+    &:focus {
+      color: $purple;
+      border-bottom-color: $purple;
+    }
+  }
+
+  &__link,
+  &__social {
+    line-height: 1.45;
+  }
+
+  &__socials {
+    @include flex-align-center(24);
+  }
+
+  &__social {
+    @include flex-align-center(8);
+    color: $purple;
+    transition: color .4s, opacity .4s;
+
+    &:hover {
+      color: $black;
+
+      svg path {
+        fill: $black;
+      }
+    }
+
+    &:focus {
+      opacity: .5;
+    }
+  }
 }

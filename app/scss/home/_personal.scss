@@ -10,7 +10,7 @@
   }
 
   &__item {
-    border-radius: 32px;
+    border-radius: $border32;
     background-color: $gray10;
     padding: 32px 32px 0;
     overflow: hidden;
@@ -29,21 +29,6 @@
     @include objectCoverBg;
     border-radius: 50%;
     margin-bottom: -47px;
-  }
-
-  &__info {
-    max-width: 450px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  &__file {
-    color: rgba($black, .64);
-    letter-spacing: 0;
-  }
-
-  .btn {
-    margin: 0 auto 16px;
   }
 
   &--prev,

@@ -33,6 +33,15 @@
     position: absolute;
     @include top50;
     right: -18%;
+    @media (min-width: 1880px) {
+      right: -14%;
+    }
+    @media (min-width: 1980px) {
+      right: -10%;
+    }
+    @media (min-width: 2080px) {
+      right: -6%;
+    }
   }
 
   label {

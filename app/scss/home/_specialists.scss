@@ -1,0 +1,42 @@
+.specialists {
+  background-color: $purple;
+  border-radius: $border40;
+  padding: $padding80;
+
+  &--prev {
+    margin-left: -25px;
+  }
+
+  &--next {
+    margin-right: -25px;
+  }
+
+  &__title {
+    color: $white;
+    max-width: 860px;
+  }
+
+  &__swiper {
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    @include objectCoverBg;
+  }
+
+  &__control {
+    @include topLeft50;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 100;
+    margin: 0 auto;
+  }
+
+  .swiper-slide {
+    max-width: 928px;
+    max-height: 617px;
+    border-radius: $border24;
+    overflow: hidden;
+  }
+}

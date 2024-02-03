@@ -1,0 +1,6 @@
+.base {
+  &__img {
+    @include objectCoverBg;
+    margin: 0 auto;
+  }
+}
