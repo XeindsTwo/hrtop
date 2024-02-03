@@ -1,0 +1,24 @@
+.companies {
+  &--luminosity {
+    mix-blend-mode: luminosity;
+    opacity: .32;
+    padding: 31px 0;
+  }
+
+  &__logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    @media (max-width: 1330px) {
+      justify-content: flex-start;
+      overflow: scroll;
+      padding: 0 8px 7px;
+      gap: 24px;
+    }
+
+    &::-webkit-scrollbar {
+      height: 3px;
+    }
+  }
+}

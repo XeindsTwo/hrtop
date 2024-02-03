@@ -1,13 +1,14 @@
-.footer {
-  margin-bottom: 24px;
+.header {
+  margin: 18.5px 0 16px;
 
   &__inner {
-    @include flex-between(48);
+    display: flex;
     align-items: center;
   }
 
   &__list {
     @include flex-align-center(24);
+    margin-left: 48px;
   }
 
   &__link {
@@ -26,19 +27,12 @@
     }
   }
 
-  &__link,
-  &__social {
-    line-height: 1.45;
-  }
-
-  &__socials {
-    @include flex-align-center(24);
-  }
-
-  &__social {
+  &__phone {
     @include flex-align-center(8);
     color: $purple;
     transition: color .4s, opacity .4s;
+    margin-left: auto;
+    margin-right: 24px;
 
     &:hover {
       color: $black;

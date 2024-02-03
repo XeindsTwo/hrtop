@@ -13,24 +13,7 @@
   }
 
   &__text,
-  &__logos {
+  .companies__logos {
     margin-bottom: 70px;
-  }
-
-  &__logos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 22px;
-    @media (max-width: 1330px) {
-      justify-content: flex-start;
-      overflow: scroll;
-      padding: 0 8px 7px;
-      gap: 24px;
-    }
-
-    &::-webkit-scrollbar {
-      height: 3px;
-    }
   }
 }
