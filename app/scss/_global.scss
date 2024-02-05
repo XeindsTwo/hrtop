@@ -10,27 +10,8 @@
   overflow-x: hidden;
   will-change: scroll-position;
 
-  &::before {
-    @include pseudo;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(#000, .8);
-    backdrop-filter: blur(6px);
-    transition: opacity .6s;
-    z-index: -1;
-    opacity: 0;
-  }
-
   &--active {
     overflow: hidden;
-
-    &::before {
-      z-index: 45;
-      opacity: 1;
-    }
   }
 }
 
@@ -42,8 +23,8 @@
   @include r($desktop) {
     padding: 0 30px;
   }
-  @include r($sm) {
-    padding: 0 25px;
+  @include r($lg) {
+    padding: 0 20px;
   }
   @include r($phone) {
     padding: 0 15px;
