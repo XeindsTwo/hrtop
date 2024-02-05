@@ -2,6 +2,9 @@
   max-width: 450px;
   text-align: center;
   margin: 0 auto;
+  @include r($lg) {
+    max-width: 420px;
+  }
 
   &--short {
     max-width: 410px;
@@ -12,18 +15,39 @@
     font-weight: 600;
     line-height: 1.45;
     letter-spacing: 0;
+    @include r($lg) {
+      font-size: 22px;
+    }
+    @include r($tablet) {
+      font-size: 20px;
+    }
+    @media (max-width: 540px) {
+      font-size: 18px;
+    }
+    @include r($phone) {
+      font-size: 16px;
+    }
   }
 
   &__btn {
     margin: 24px auto 0;
+    @include r($tablet) {
+      font-size: 16px;
+    }
   }
 
   &__text {
     margin-top: 16px;
     letter-spacing: 0;
-    color: rgba(3,3,3,.64);
+    color: rgba(3, 3, 3, .64);
     line-height: 1.5;
     display: inline-block;
+    @include r($tablet) {
+      font-size: 16px;
+    }
+    @include r($phone) {
+      font-size: 14px;
+    }
   }
 }
 

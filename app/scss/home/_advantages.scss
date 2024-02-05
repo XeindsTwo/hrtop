@@ -2,14 +2,62 @@
   background-color: $purple;
   border-radius: $border40;
   padding: $padding80;
+  @include r($desktop) {
+    border-radius: $border32;
+    padding: 60px 0;
+  }
+  @include r($lg) {
+    padding: 50px 0;
+    border-radius: $border24;
+  }
+  @media (max-width: 840px) {
+    padding: 44px 0;
+  }
+  @include r($tablet) {
+    padding: 40px 0;
+  }
+  @include r($sm) {
+    padding: 36px 0;
+  }
+  @include r($phone) {
+    border-radius: $border16;
+  }
 
   &__title,
   &__list {
     margin-bottom: 72px;
+    @media (max-width: 1300px) {
+      margin-bottom: 60px;
+    }
+    @include r($desktop) {
+      margin-bottom: 50px;
+    }
+    @include r($lg) {
+      margin-bottom: 40px;
+    }
   }
 
   &__title {
     max-width: 690px;
+    @media (max-width: 1400px) {
+      max-width: 650px;
+    }
+    @media (max-width: 1300px) {
+      max-width: 610px;
+    }
+    @include r($desktop) {
+      max-width: 550px;
+    }
+    @include r($lg) {
+      max-width: 520px;
+    }
+    @media (max-width: 910px) {
+      margin-bottom: 32px;
+      max-width: 500px;
+    }
+    @include r($tablet) {
+      font-size: 38px;
+    }
   }
 
   &__links {

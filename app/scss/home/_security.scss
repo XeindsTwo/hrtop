@@ -2,6 +2,29 @@
   &__title {
     margin-bottom: 28px;
     max-width: 705px;
+    @include r($lg) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__text {
+    display: none;
+    max-width: 340px;
+    text-align: center;
+    margin: 0 auto 24px;
+    line-height: 1.5;
+    color: rgba($black, .64);
+    @include r($lg) {
+      display: block;
+    }
+    @include r($sm) {
+      font-size: 16px;
+      max-width: 310px;
+    }
+    @include r($phone) {
+      font-size: 14px;
+      max-width: 280px;
+    }
   }
 
   &__list {
@@ -20,5 +43,12 @@
     background-color: rgba(#5A5171, .08);
     letter-spacing: 0;
     line-height: 1.45;
+    @include r($lg) {
+      font-size: 16px;
+    }
+    @media (max-width: 540px) {
+      font-size: 14px;
+      border-radius: $border8;
+    }
   }
 }

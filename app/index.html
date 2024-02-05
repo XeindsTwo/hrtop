@@ -111,15 +111,15 @@
 </section>
   <div class="container">
   <div class="companies__logos companies--luminosity">
-    <img src="images/logos/1.png" width="190" height="30.25" alt="логотип">
-    <img src="images/logos/2.png" width="102" height="30.25" alt="логотип">
-    <img src="images/logos/3.png" width="107.5" height="30.25" alt="логотип">
-    <img src="images/logos/4.png" width="205.7" height="30.25" alt="логотип">
-    <img src="images/logos/5.png" width="174" height="30.25" alt="логотип">
-    <img src="images/logos/6.png" width="102.22" height="30.25" alt="логотип">
-    <img src="images/logos/7.png" width="33.27" height="30.25" alt="логотип">
-    <img src="images/logos/8.png" width="78.65" height="30.25" alt="логотип">
-    <img src="images/logos/9.png" width="137" height="30.25" alt="логотип">
+    <img class="companies__img companies__img--1" src="images/logos/1.png" width="190" height="30.25" alt="логотип">
+    <img class="companies__img companies__img--2" src="images/logos/2.png" width="102" height="30.25" alt="логотип">
+    <img class="companies__img companies__img--3" src="images/logos/3.png" width="107.5" height="30.25" alt="логотип">
+    <img class="companies__img companies__img--4" src="images/logos/4.png" width="205.7" height="30.25" alt="логотип">
+    <img class="companies__img companies__img--5" src="images/logos/5.png" width="174" height="30.25" alt="логотип">
+    <img class="companies__img companies__img--6" src="images/logos/6.png" width="102.22" height="30.25" alt="логотип">
+    <img class="companies__img companies__img--7" src="images/logos/7.png" width="33.27" height="30.25" alt="логотип">
+    <img class="companies__img companies__img--8" src="images/logos/8.png" width="78.65" height="30.25" alt="логотип">
+    <img class="companies__img companies__img--9" src="images/logos/9.png" width="137" height="30.25" alt="логотип">
   </div>
 </div>
   <section class="consultation indent" id="consultation">
@@ -155,7 +155,7 @@
     <h2 class="advantages__title title title--white">
       Почему Вы можете доверять именно нам?
     </h2>
-    <ul class="advantages__list features-list">
+    <ul class="advantages__list features-list features-list--scroll">
       <li class="features-list__item">
         <img src="images/icons/stars.svg" alt="декоративная иконка" width="24" height="24">
         <h3 class="features-list__name">Более 5 лет на рынке</h3>
@@ -209,7 +209,8 @@
       </li>
       <li class="swiper-slide swiper-slide--long">
         <div class="cases__item">
-          <img class="cases__img" src="images/cases/1.jpg" width="324" height="508" alt="кейс beFruitbe">
+          <img class="cases__img cases__img--product" src="images/cases/1.jpg" width="324" height="508"
+               alt="кейс beFruitbe">
           <div class="cases__content">
             <div class="cases__exodus">
               <span class="cases__exodus-item">7 новых сотрудников за 2,5 недели</span>
@@ -271,6 +272,83 @@
               эффективно.
             </p>
           </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+    <ul class="cases__list">
+      <li class="cases__item">
+        <div class="cases__content">
+          <div class="cases__exodus">
+            <span class="cases__exodus-item">Приумножили прибыль</span>
+            <span class="cases__exodus-item">Справились быстро</span>
+          </div>
+          <img class="cases__img cases__img--absolute" src="images/cases/2.jpg" width="174" height="320" alt="">
+          <img class="cases__logo" src="images/logos/1.png" width="189.6" height="30" alt="Land Rover Range Rover">
+          <h3 class="cases__name cases__name--short">
+            Проведена оценка всего персонала
+          </h3>
+          <p class="cases__text">
+            Проведена оценка всего персонала методом enps, выявлены точки роста компании.
+          </p>
+        </div>
+      </li>
+      <li class="cases__item">
+        <div class="cases__content">
+          <div class="cases__exodus cases__exodus--bottom">
+            <span class="cases__exodus-item">Приумножили прибыль</span>
+            <span class="cases__exodus-item">Справились быстро</span>
+          </div>
+          <img class="cases__logo" src="images/logos/11.png" width="80" height="78" alt="логотип">
+          <h3 class="cases__name cases__name--short">
+            Найм эффективного руководителя отдела продаж
+          </h3>
+          <p class="cases__text">
+            Сотрудник взял под ответственность 3 отдела: логистики, маркетинга и продаж и вырос в коммерческого
+            директора. Работает в компании уже третий год, собственник разгружен на 90%, ведь найден Топ, который
+            «рулит» бизнесом эффективно.
+          </p>
+        </div>
+      </li>
+      <li class="cases__item">
+        <div class="cases__content">
+          <div class="cases__exodus cases__exodus--bottom">
+            <span class="cases__exodus-item">Приумножили прибыль</span>
+            <span class="cases__exodus-item">Справились быстро</span>
+          </div>
+          <img class="cases__logo" src="images/logos/10.png" width="211" height="24" alt="Century 21">
+          <h3 class="cases__name cases__name--short">
+            Cтарт-ап проекта по недвижимости.
+          </h3>
+          <p class="cases__text">
+            Результаты за 2 месяца:
+            <span>
+                Нанят Операционный директор, 2 руководителя отдела продаж, офис менеджер и 18 менеджеров по продажам.
+              </span>
+            <span>
+                82% нанятого персонала работают в компании по сей день
+              </span>
+          </p>
+        </div>
+      </li>
+      <li class="cases__item cases__item--fruit">
+        <img class="cases__img cases__img--product" src="images/cases/1.jpg" width="324" height="508"
+             alt="кейс beFruitbe">
+        <div class="cases__content">
+          <div class="cases__exodus">
+            <span class="cases__exodus-item">7 новых сотрудников за 2,5 недели</span>
+            <span class="cases__exodus-item">Без замен</span>
+          </div>
+          <img class="cases__logo" src="images/logos/8.png" width="78.65" height="30" alt="beFruitbe">
+          <h3 class="cases__name">
+            Найм нового отдела продаж в краткие сроки
+          </h3>
+          <p class="cases__text">
+            7 новых сотрудников за 2,5 недели, готовых трудиться на
+            благо компании. Не потребовалось ни одной замены,
+            сотрудники работают по сей день в компании
+          </p>
         </div>
       </li>
     </ul>
@@ -438,6 +516,9 @@
     <h2 class="security__title title">
       Мы проверяем отобранных соискателей службой безопасности:
     </h2>
+    <div class="security__text">
+      Предельно высокая скорость подбора благодаря использованию Искусственного Интеллекта.
+    </div>
     <ul class="security__list">
       <li class="security__item">
         На действительность паспорта
@@ -541,7 +622,7 @@
 </section>
   <section class="base indent">
   <div class="container">
-    <h2 class="title">
+    <h2 class="title title--line">
       Большое количество работников <span>более 100тыс.</span> в базе
     </h2>
   </div>
@@ -549,7 +630,7 @@
   <div class="container">
     <div class="info">
       <p class="info__title">
-        Найти своего специалиста, с гарантией замены
+        Найти своего специалиста, <br> с гарантией замены
       </p>
       <a class="info__btn btn" href="#consultation">Найти сотрудника</a>
       <p class="info__text">
@@ -634,7 +715,7 @@
 </section>
   <section class="clients indent" id="clients">
   <div class="container">
-    <h2 class="clients__title title">Наши клиенты</h2>
+    <h2 class="clients__title title title--line">Наши клиенты</h2>
     <div class="clients__text">
       86,6% клиентов доверяют нам повторный подбор сотрудников
     </div>

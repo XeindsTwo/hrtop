@@ -6,6 +6,11 @@
   background-color: $gray10;
   transition: border .4s, background-color .4s;
   color: $black;
+  box-shadow: 0 2px 9px 0 #efedf3;
+  width: 100%;
+  @include r($sm) {
+    font-size: 16px;
+  }
 
   &:hover {
     border-color: $purple;

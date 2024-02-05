@@ -2,5 +2,32 @@
   &__img {
     @include objectCoverBg;
     margin: 0 auto;
+    @media (max-width: 1300px) {
+      height: 510px;
+    }
+    @include r($desktop) {
+      height: 480px;
+    }
+    @media (max-width: 1100px) {
+      height: 450px;
+    }
+    @include r($lg) {
+      height: 420px;
+    }
+    @media (max-width: 910px) {
+      height: 380px;
+    }
+    @include r($tablet) {
+      height: 340px;
+    }
+    @include r($sm) {
+      height: 320px;
+    }
+    @include r($phone) {
+      height: 300px;
+    }
+    @media (max-width: 390px) {
+      height: 290px;
+    }
   }
 }

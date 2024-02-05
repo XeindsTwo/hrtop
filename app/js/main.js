@@ -47,18 +47,23 @@ Fancybox.bind("[data-fancybox]", {});
 
 const swiperCases = new Swiper(".cases__swiper", {
   slidesPerView: 'auto',
-  spaceBetween: 24,
+  spaceBetween: 18,
   initialSlide: 1,
   centeredSlides: true,
   loop: true,
   keyboard: {
     enabled: true,
+  },
+  breakpoints: {
+    780: {
+      spaceBetween: 24,
+    }
   }
 });
 
 const swiperReviews = new Swiper(".reviews__swiper", {
   slidesPerView: 'auto',
-  spaceBetween: 24,
+  spaceBetween: 16,
   initialSlide: 1,
   centeredSlides: true,
   loop: true,
@@ -69,6 +74,11 @@ const swiperReviews = new Swiper(".reviews__swiper", {
     prevEl: ".reviews--prev",
     nextEl: ".reviews--next"
   },
+  breakpoints: {
+    600: {
+      spaceBetween: 24,
+    }
+  }
 });
 
 const swiperSpecialists = new Swiper(".specialists__swiper", {

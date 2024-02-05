@@ -123,4 +123,11 @@
       }
     }
   }
+
+  .logo__img {
+    @media (max-width: 375px) {
+      width: auto;
+      height: 30px;
+    }
+  }
 }

@@ -10,15 +10,48 @@
     align-items: center;
     justify-content: center;
     gap: 22px;
+
     @media (max-width: 1330px) {
+      margin: 0 -60px;
       justify-content: flex-start;
-      overflow: scroll;
-      padding: 0 8px 7px;
+      padding: 30px 8px 10px;
       gap: 24px;
+      overflow: scroll;
+      margin-bottom: 20px;
+    }
+    @include r($desktop) {
+      margin: 0 -30px;
+    }
+    @include r($lg) {
+      margin: 0 -20px;
+      gap: 20px;
+    }
+    @include r($phone) {
+      gap: 18px;
+      margin: 0 -15px;
+      padding: 25px 8px;
     }
 
     &::-webkit-scrollbar {
       height: 3px;
+      @include r($phone) {
+        background-color: transparent;
+        height: 0;
+      }
+    }
+  }
+
+  &__img {
+    @include objectCoverBg;
+    @include r($lg) {
+      width: auto;
+      height: 26px;
+    }
+    @include r($tablet) {
+      height: 23px;
+    }
+    @include r($sm) {
+      height: 21px;
     }
   }
 }
