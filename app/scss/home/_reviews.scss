@@ -30,6 +30,7 @@
     }
     @media (max-width: 490px) {
       max-width: 365px;
+      border-radius: $border8;
     }
     @include r($phone) {
       max-width: 330px;
@@ -132,27 +133,33 @@
   &--prev {
     transform: translateY(-50%) scale(-1);
     margin-left: -25px;
-    @media (max-width: 850px) {
-      margin-left: -39px;
+    @include r($lg) {
+      margin-left: -41px;
     }
-    @media (max-width: 660px) {
+    @media (max-width: 680px) {
       margin-left: -46px;
     }
-    @media (max-width: 530px) {
-      margin-left: -50px;
+    @media (max-width: 600px) {
+      margin-left: -51px;
+    }
+    @media (max-width: 490px) {
+      margin-left: -54px;
     }
   }
 
   &--next {
-    right: 36px;
-    @media (max-width: 850px) {
+    right: 38px;
+    @include r($lg) {
       right: 20px;
     }
-    @media (max-width: 660px) {
-      right: 13px;
+    @media (max-width: 680px) {
+      right: 14px;
     }
-    @media (max-width: 530px) {
-      right: 9px;
+    @media (max-width: 600px) {
+      right: 8px;
+    }
+    @media (max-width: 490px) {
+      right: 7px;
     }
   }
 

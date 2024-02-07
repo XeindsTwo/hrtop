@@ -27,6 +27,27 @@
     }
   }
 
+  &--column {
+    @media (max-width: 770px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 12px;
+      .features-list__item:last-child {
+        grid-column: span 2;
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+      }
+    }
+    @include r($sm) {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      .features-list__item:last-child {
+        max-width: 100%;
+      }
+    }
+  }
+
   &__item {
     padding: 32px;
     border-radius: $border32;

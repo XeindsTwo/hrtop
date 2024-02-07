@@ -83,7 +83,7 @@ const swiperReviews = new Swiper(".reviews__swiper", {
 
 const swiperSpecialists = new Swiper(".specialists__swiper", {
   slidesPerView: 'auto',
-  spaceBetween: 24,
+  spaceBetween: 10,
   centeredSlides: true,
   initialSlide: 1,
   loop: true,
@@ -93,6 +93,14 @@ const swiperSpecialists = new Swiper(".specialists__swiper", {
   },
   keyboard: {
     enabled: true,
+  },
+  breakpoints: {
+    768: {
+      spaceBetween: 24,
+    },
+    540: {
+      spaceBetween: 16
+    }
   }
 });
 

@@ -16,7 +16,7 @@
       justify-content: flex-start;
       padding: 30px 8px 10px;
       gap: 24px;
-      overflow: scroll;
+      overflow-x: scroll;
       margin-bottom: 20px;
     }
     @include r($desktop) {
