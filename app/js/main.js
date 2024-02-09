@@ -105,13 +105,25 @@ const swiperSpecialists = new Swiper(".specialists__swiper", {
 });
 
 const swiperPersonal = new Swiper(".personal__swiper", {
-  slidesPerView: 3,
-  spaceBetween: 24,
+  slidesPerView: 'auto',
+  spaceBetween: 16,
+  freeMode: true,
   navigation: {
     prevEl: ".personal--prev",
     nextEl: ".personal--next"
   },
   keyboard: {
     enabled: true,
+  },
+  breakpoints: {
+    1200: {
+      spaceBetween: 24
+    },
+    992: {
+      slidesPerView: 3
+    },
+    768: {
+      spaceBetween: 18
+    }
   }
 });
