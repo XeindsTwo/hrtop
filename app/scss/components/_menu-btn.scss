@@ -9,9 +9,6 @@
   padding: 18px 16px;
   transition: all .4s;
   background-color: $gray15;
-  @media (max-width: 1160px) {
-    display: block;
-  }
 
   &:hover {
     background-color: $purple;
@@ -25,10 +22,20 @@
     background-color: $purple90;
   }
 
-  @media(max-width: 800px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  &--header {
+    @media (max-width: 1160px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &--footer {
+    @include r($tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__line,

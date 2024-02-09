@@ -1,13 +1,70 @@
 .footer {
   margin-bottom: 24px;
+  @include r($desktop) {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 1100px) {
+    font-size: 16px;
+  }
+  @include r($phone) {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
 
   &__inner {
     @include flex-between(48);
     align-items: center;
+    @media (max-width: 1470px) {
+      flex-wrap: wrap;
+      gap: 34px;
+    }
+    @include r($tablet) {
+      gap: 30px 24px;
+    }
+    @include r($phone) {
+      gap: 30px 18px;
+    }
+  }
+
+  .logo {
+    @media (max-width: 1470px) {
+      order: 0;
+    }
+
+    &__img {
+      @media (max-width: 370px) {
+        width: auto;
+        height: 30px;
+      }
+    }
+  }
+
+  &__nav {
+    @media (max-width: 1470px) {
+      width: 100%;
+      order: 1;
+    }
+    @include r($tablet) {
+      display: none;
+    }
   }
 
   &__list {
     @include flex-align-center(24);
+    @media (max-width: 1470px) {
+      justify-content: center;
+      gap: 40px;
+    }
+    @media (max-width: 1100px) {
+      gap: 33px;
+    }
+    @include r($tablet) {
+      gap: 22px 33px;
+      flex-wrap: wrap;
+    }
+    @include r($phone) {
+      gap: 22px 29px;
+    }
   }
 
   &__link {
@@ -33,12 +90,18 @@
 
   &__socials {
     @include flex-align-center(24);
+    @include r($tablet) {
+      margin-left: auto;
+    }
   }
 
   &__social {
     @include flex-align-center(8);
     color: $purple;
     transition: color .4s, opacity .4s;
+    @include r($phone) {
+      gap: 7px;
+    }
 
     &:hover {
       color: $black;
@@ -50,6 +113,53 @@
 
     &:focus {
       opacity: .5;
+    }
+
+    &--mail {
+      @include r($tablet) {
+        display: none;
+      }
+    }
+
+    svg {
+      @media (max-width: 1100px) {
+        width: auto;
+        height: 22px;
+      }
+      @include r($phone) {
+        height: 19px;
+      }
+    }
+  }
+
+  &__consultation {
+    @include r($tablet) {
+      display: none;
+    }
+  }
+
+  &__nav-mobile {
+    @include flex-column(30);
+    align-items: center;
+    margin: 0 auto;
+    display: none;
+    font-size: 18px;
+    opacity: 0;
+    height: 1px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+
+    @include r($tablet) {
+      display: flex;
+    }
+    @include r($phone) {
+      font-size: 16px;
+    }
+  }
+
+  &__btn {
+    @include r($tablet) {
+      font-size: 16px;
     }
   }
 }

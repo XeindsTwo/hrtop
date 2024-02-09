@@ -5,16 +5,6 @@
 @import 'mixin';
 @import 'global';
 
-@import "components/features-list";
-@import "components/form-elements";
-@import "components/companies";
-@import "components/menu-btn";
-@import "components/footer";
-@import "components/btn";
-@import "components/header";
-@import "components/arrow";
-@import "components/info";
-
 @import "home/home";
 @import "home/consultation";
 @import "home/advantages";
@@ -28,3 +18,13 @@
 @import "home/base";
 @import "home/personal";
 @import "home/clients";
+
+@import "components/features-list";
+@import "components/form-elements";
+@import "components/companies";
+@import "components/menu-btn";
+@import "components/btn";
+@import "components/footer";
+@import "components/header";
+@import "components/arrow";
+@import "components/info";

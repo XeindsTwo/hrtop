@@ -127,3 +127,35 @@ const swiperPersonal = new Swiper(".personal__swiper", {
     }
   }
 });
+
+const btnFooter = document.querySelector('.menu-btn--footer');
+const menuFooter = document.querySelector('.footer__nav-mobile');
+
+function resetStyles() {
+  menuFooter.style.height = '0';
+  menuFooter.style.opacity = '0';
+  menuFooter.style.marginTop = '0';
+  menuFooter.classList.remove('footer__nav-mobile--active');
+  btnFooter.classList.remove('active');
+}
+
+btnFooter.addEventListener('click', () => {
+  menuFooter.classList.toggle('footer__nav-mobile--active');
+  btnFooter.classList.toggle('active');
+  btnFooter.blur();
+
+  if (menuFooter.classList.contains('footer__nav-mobile--active')) {
+    menuFooter.style.height = menuFooter.scrollHeight + 'px';
+    menuFooter.style.opacity = '1';
+    menuFooter.style.marginTop = '25px';
+  } else {
+    resetStyles();
+  }
+});
+
+const footerLinks = document.querySelectorAll('.footer__link');
+footerLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    resetStyles();
+  });
+});
