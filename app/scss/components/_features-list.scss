@@ -12,7 +12,7 @@
   &--scroll {
     @media (max-width: 820px) {
       overflow-x: scroll;
-      margin: 0 -20px;
+      margin: 0 -20px 40px;
       padding: 0 20px;
       .features-list__item {
         min-width: 300px;
