@@ -117,7 +117,8 @@ const swiperPersonal = new Swiper(".personal__swiper", {
   },
   breakpoints: {
     1200: {
-      spaceBetween: 24
+      spaceBetween: 24,
+      slidesPerView: 3
     },
     992: {
       slidesPerView: 3

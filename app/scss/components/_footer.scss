@@ -138,6 +138,51 @@
     }
   }
 
+  &__author {
+    font-size: 16px;
+    margin-top: 55px;
+    @include flex-between(40);
+    @media (max-width: 1100px) {
+      margin-top: 43px;
+    }
+    @include r($lg) {
+      margin-top: 33px;
+    }
+    @include r($tablet) {
+      display: none;
+    }
+
+    &-links {
+      @include flex-column(14);
+
+      a {
+        line-height: 1;
+        transition: color .4s, opacity .4s;
+
+        &:hover {
+          color: $purple;
+        }
+
+        &:focus {
+          opacity: .5;
+        }
+      }
+    }
+  }
+
+  &__address {
+    text-align: right;
+    @include flex-column(3);
+    color: rgba($black, .7);
+    @include r($lg) {
+      font-size: 14px;
+    }
+    @include r($tablet) {
+      text-align: center;
+      gap: 5px;
+    }
+  }
+
   &__nav-mobile {
     @include flex-column(30);
     align-items: center;
