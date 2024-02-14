@@ -43,8 +43,6 @@ menuLinks.forEach((menuLink) => {
   menuLink.addEventListener('touchstart', handleAnchorClick, {passive: true});
 });
 
-Fancybox.bind("[data-fancybox]", {});
-
 const swiperCases = new Swiper(".cases__swiper", {
   slidesPerView: 'auto',
   spaceBetween: 18,
@@ -60,6 +58,8 @@ const swiperCases = new Swiper(".cases__swiper", {
     }
   }
 });
+
+Fancybox.bind("[data-fancybox]", {});
 
 const swiperReviews = new Swiper(".reviews__swiper", {
   slidesPerView: 'auto',
