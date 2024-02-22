@@ -23,6 +23,8 @@
 
       &::-webkit-scrollbar {
         height: 0;
+        background-color: transparent;
+        opacity: 0;
       }
     }
   }

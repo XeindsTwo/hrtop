@@ -268,6 +268,9 @@
 
     &-img {
       @include objectCoverBg;
+      position: relative;
+      z-index: 20;
+
       @media (max-width: 1400px) {
         width: auto;
         height: 635px;
@@ -429,3 +432,73 @@
     }
   }
 }
+
+.animation {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+}
+
+.resume {
+  object-fit: contain;
+  position: absolute;
+  top: 47%;
+  left: 13%;
+  transform-origin: top left;
+  animation: floatAnimation 3s ease-in-out infinite;
+  @media (max-width: 1300px) {
+    height: auto;
+    width: 81px;
+    top: 44%;
+  }
+  @media (max-width: 1100px) {
+    width: 75px;
+    left: 24%;
+    top: 40%;
+  }
+  @include r($phone) {
+    width: 70px;
+    top: 45%;
+    left: 37%;
+  }
+  @media (max-width: 445px) {
+    width: 67px;
+    left: 46%;
+    top: 42%;
+  }
+  @media (max-width: 410px) {
+    left: 51%;
+    top: 40%;
+  }
+  @media (max-width: 375px) {
+    width: 64px;
+  }
+  @media (max-width: 360px) {
+    width: 60px;
+  }
+}
+
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translate(-50%, -50%) translateY(0px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-50px);
+  }
+}
+
+/*
+@keyframes slideAndRotate {
+  0% {
+    transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateX(170px) translateY(-110px) rotate(-13deg) scale(0.9);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateX(415px) translateY(-194px) rotate(4deg) scale(0.85);
+  }
+}*/

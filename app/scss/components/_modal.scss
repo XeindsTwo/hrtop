@@ -1,0 +1,75 @@
+.modal {
+  border-radius: 24px;
+  padding: 32px;
+  background-color: $white;
+  max-width: 515px;
+  width: 100%;
+  position: fixed;
+  @include topLeft50;
+  z-index: 300;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+  transform: translate(-50%, -42%);
+  @include r($lg) {
+    padding: 30px 28px;
+    border-radius: $border20;
+  }
+  @include r($sm) {
+    padding: 26px 28px;
+  }
+  @media (max-width: 560px) {
+    max-width: 94%;
+    border-radius: $border16;
+  }
+  @include r($phone) {
+    padding: 24px;
+  }
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 1;
+    @include r($desktop) {
+      font-size: 34px;
+    }
+    @include r($lg) {
+      font-size: 32px;
+      margin-bottom: 7px;
+    }
+    @include r($tablet) {
+      font-size: 28px;
+      margin-bottom: 4px;
+    }
+    @include r($sm) {
+      font-size: 26px;
+    }
+  }
+
+  &__text {
+    line-height: 1.5;
+    font-size: 17px;
+    margin-bottom: 30px;
+    @include r($tablet) {
+      font-size: 16px;
+      max-width: 420px;
+    }
+    @media (max-width: 410px) {
+      font-size: 14px;
+      max-width: 320px;
+    }
+  }
+}
