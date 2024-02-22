@@ -372,6 +372,7 @@
       left: -20px;
     }
     @include r($phone) {
+      z-index: 30;
       left: -36px;
       bottom: 18px;
     }
@@ -434,12 +435,40 @@
 }
 
 .animation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px 70px;
   position: absolute;
-  width: 200px;
-  height: 200px;
-  top: 50%;
-  left: 28%;
+  top: 39%;
+  left: 11%;
   transform: translate(-50%, -50%);
+}
+
+.resume {
+  &__first {
+    transform: translate(-25px, -20px);
+    animation: scaleAnimationX 3s ease-in-out infinite alternate;
+  }
+
+  &__two {
+    animation: floatAnimationTwo 3s ease-in-out infinite alternate;
+  }
+
+  &__three {
+    transform: translate(12px, -4px);
+    animation: floatAnimationThree 3s ease-in-out infinite alternate;
+  }
+
+  &__four {
+    transform: translate(6px, 9px);
+    animation: scaleAnimationLastX 3s ease-in-out infinite alternate;
+  }
+
+  &__last {
+    position: absolute;
+    @include topLeft50;
+    animation: floatAnimationLast 3s ease-in-out infinite alternate;
+  }
 }
 
 .resume {
@@ -481,12 +510,54 @@
   }
 }
 
-@keyframes floatAnimation {
+@keyframes floatAnimationThree {
   0%, 100% {
-    transform: translate(-50%, -50%) translateY(0px);
+    transform: translate(12px, -4px) translateY(0px);
   }
   50% {
-    transform: translate(-50%, -50%) translateY(-50px);
+    transform: translate(12px, -4px) translateY(-12px);
+  }
+}
+
+@keyframes floatAnimationTwo {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-19px);
+  }
+}
+
+@keyframes floatAnimationLast {
+  0%, 100% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -58%);
+  }
+}
+
+@keyframes scaleAnimationX {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.08);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes scaleAnimationLastX {
+  0% {
+    transform: scaleX(1) translate(6px, 9px);
+  }
+  50% {
+    transform: scaleX(0.08) translate(6px, 9px);
+  }
+  100% {
+    transform: scaleX(1) translate(6px, 9px);
   }
 }
 
